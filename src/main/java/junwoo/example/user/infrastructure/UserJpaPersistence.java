@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RequiredArgsConstructor
-public class UserRepositoryImpl implements UserRepository {
+public class UserJpaPersistence implements UserRepository {
     private final UserJpaRepository userJpaRepository;
     private final JPAQueryFactory queryFactory;
 

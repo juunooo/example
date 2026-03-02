@@ -17,3 +17,10 @@ spring:
         format_sql: true
         use_sql_comments: true
         default_batch_fetch_size: 100
+
+springdoc:
+  swagger-ui:
+    # swagger-ui 접근 경로에 대한 별칭, 해당 주소로 접속해도 http://localhost:8080/swagger-ui/index.html로 리다이렉션 됨.
+    path: /api-test
+  paths-to-match:
+    - /api/** # swagger-ui에 표시할 api의 엔드포인트 패턴
